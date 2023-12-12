@@ -24,15 +24,13 @@
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me" 
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Fill" />
-
-            <Button Text="Tap me to navigate to the Expander page"
-                    Clicked="Button_OnClicked"/>
+            <Button Text="GO TO SIMPLE EXPANDERS PAGE"
+                    Clicked="Button_OnClickedSimple"/>
+            <Button Text="GO TO COMPLEX EXPANDERS PAGE"
+                    Clicked="Button_OnClickedComplex"/>
+            <Label Text="the activity indicator below simply shows that the recording/app is still running. if it looks like nothing is happening, it's because the complex button was pressed and we're waiting for the complex expander page to inflate."/>
+            <ActivityIndicator x:Name="_indicator"
+                               IsRunning="True"/>
         </VerticalStackLayout>
     </ScrollView>
 

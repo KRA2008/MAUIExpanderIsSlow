@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="ExampleApp.ExpanderPageSimple"
+             Title="Simple Expander Page">
+    <ScrollView>
+        <VerticalStackLayout>
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Label Text="Simple Expander 1"/>
+                </toolkit:Expander.Header>
+                <Label Text="hey look my contents are simple"/>
+            </toolkit:Expander>
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Label Text="Simple Expander 2"/>
+                </toolkit:Expander.Header>
+                <Label Text="hey look my contents are simple"/>
+            </toolkit:Expander>
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Label Text="Simple Expander 3"/>
+                </toolkit:Expander.Header>
+                <Label Text="hey look my contents are simple"/>
+            </toolkit:Expander>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
